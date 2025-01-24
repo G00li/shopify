@@ -18,7 +18,6 @@ export async function getServerSideProps() {
 export default function ProductsPage({ products }) { 
     return (
         <div>
-
             <div>
                 <Link href={"/tags"}>All tags</Link>
             </div>

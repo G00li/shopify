@@ -1,4 +1,5 @@
 import { fetchProducts } from "../../lib/api/products";
+import Link from "next/link";
 
 export async function getServerSideProps ({params}){
     try{
@@ -20,6 +21,9 @@ export async function getServerSideProps ({params}){
 export default function ProductsNyTag({filteredProducts, selectedTag}){
     return(
         <div>
+            <div>
+                <Link href={"/"}>Home</Link>
+            </div>
             <h1>Products with the tag: {selectedTag}</h1>
             {filteredProducts.length > 0 ? (
                 <ul>
