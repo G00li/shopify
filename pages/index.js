@@ -1,4 +1,5 @@
 import { fetchProducts } from "../lib/api/products";
+import Link from "next/link";
 
 export async function getServerSideProps() {
     try {
@@ -17,6 +18,11 @@ export async function getServerSideProps() {
 export default function ProductsPage({ products }) { 
     return (
         <div>
+
+            <div>
+                <Link href={"/tags"}>All tags</Link>
+            </div>
+
             <h1>Products List Page</h1>
             <ul>
                 {products.map((product, index) => (
