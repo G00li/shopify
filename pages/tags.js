@@ -21,9 +21,6 @@ export async function getServerSideProps() {
 export default function TagsPage({ allTags }) {
 	return (
 		<section className="min-h-screen bg-gray-50 p-8">
-			<div className="mb-6">
-				<Link href={'/'} className="text-blue-600 underline">Home</Link>
-			</div>
 			<h1 className="text-2xl font-bold mb-4 text-gray-800 text-center">Select a tag</h1>
 			<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-2 ">
 				{allTags.length > 0 ? (

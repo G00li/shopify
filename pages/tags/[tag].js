@@ -22,9 +22,6 @@ export async function getServerSideProps ({params}){
 export default function ProductsByTag({filteredProducts, selectedTag}){
     return(
         <section className="min-h-screen p-8">
-            <div className="mb-6">
-                <Link href={"/"} className="text-blue-600 underline">Home</Link>
-            </div>
             <h1 className="text-2xl font-bold mb-6">Products with the tag: <span className="text-blue-800">{selectedTag}</span></h1>
             {filteredProducts.length > 0 ? (
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
