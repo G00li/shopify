@@ -15,9 +15,6 @@ export default function Card ({name, stock, tags = []}) {
                     <span className="text-sm text-gray-400 italic ">No tags</span>
                 )}
             </div>
-
-            <p className="text-sm text-gray-500 mt-2">{tags.length > 0 ? tags.join(", ") : 'No tags"'}</p>
-
         </div>
     )
 }
