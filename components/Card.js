@@ -1,4 +1,4 @@
-export default function Card ({name, stock, tags}) {
+export default function Card ({name, stock, tags = []}) {
     return (
         <div className="w-full max-w-sm border-2 rounded-lg shadow-lg p-4 bg-white transition-transform transform hover:scale-105">
             <h2 className="text-base font-semibold text-gray-800 md:text-lg">{name}</h2>
