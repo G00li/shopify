@@ -1,6 +1,15 @@
-export default function Card ({name, stock, tags = []}) {
+export default function Card ({name, stock, tags = [], image}) {
     return (
         <div className="w-full max-w-sm border-2 rounded-lg shadow-lg p-4 bg-white transition-transform transform hover:scale-105">
+            {image ? (
+                <img
+                    src = {image}
+                    alt = {name}
+                />
+            ):(
+                <div>No Image</div>
+            )}
+
             <h2 className="text-base font-semibold text-gray-800 md:text-lg">{name}</h2>
             <p className="text-sm text-gray-600 md:text-base">Stock: <span className="font-medium">{stock} </span></p>
             <div className="mt-2 flex flex-wrap gap-2">

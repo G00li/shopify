@@ -31,6 +31,7 @@ export default function ProductsByTag({filteredProducts, selectedTag}){
                                 name = {product.name}
                                 stock = {product.stock}
                                 tags = {product.tag}
+                                image = {product.image}
                             />
                         </div>
                     ))}

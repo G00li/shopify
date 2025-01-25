@@ -26,7 +26,8 @@ export default function ProductsPage({ products }) {
                         <Card 
                             name={product.name}
                             stock={product.stock}
-                            tags={product.tag} 
+                            tags={product.tag}
+                            image={product.image}
                         />
                     </div>
                 ))}
