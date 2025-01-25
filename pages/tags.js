@@ -6,8 +6,10 @@ export async function getServerSideProps() {
 		const products = await fetchProducts()
 		const allTags = [...new Set(products.flatMap(product => product.tag))]
 
+		const sortedTags = allTags.sort((a, b) => a.localeCompare(b))
+
 		return {
-			props: { allTags }
+			props: { allTags:sortedTags }
 		}
 	}
 	catch (error) {
