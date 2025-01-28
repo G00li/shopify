@@ -19,7 +19,7 @@ export async function getServerSideProps() {
 export default function ProductsPage({ products }) { 
     return (
         <section className=" min-h-screen p-8">
-            <h1 className="text-2xl font-bold mb-6 text-center">Products List Page</h1>
+            <h1 className="text-2xl font-bold mb-6 text-center">All Products</h1>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                 {products.map((product, index) => (
                     <div key={index} className="flex justify-center">
